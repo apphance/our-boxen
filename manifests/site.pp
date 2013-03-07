@@ -24,6 +24,13 @@ Exec {
   ]
 }
 
+package { "mercurial":
+    ensure    => latest,
+    provider  => 'brew'
+  }
+}
+
+
 File {
   group => 'staff',
   owner => $luser
