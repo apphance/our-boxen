@@ -24,12 +24,6 @@ Exec {
   ]
 }
 
-package { "mercurial":
-    ensure    => latest,
-    provider  => 'brew'
-  }
-}
-
 
 File {
   group => 'staff',
@@ -84,7 +78,8 @@ node default {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+      'mercurial'
     ]:
   }
 
