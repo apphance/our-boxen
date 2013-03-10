@@ -79,7 +79,8 @@ node default {
       'ack',
       'findutils',
       'gnu-tar',
-      'mercurial'
+      'mercurial',
+      'gradle'
     ]:
   }
 
